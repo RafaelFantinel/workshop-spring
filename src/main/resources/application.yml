@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: ${SPRING_PROFILE}
+#Server
+server:
+  port: 8080

@@ -1,0 +1,19 @@
+spring:
+  devtools:
+    restart:
+      enabled: true
+    remote:
+      secret: mysecret
+  data-source:
+    url: ${SPRING_URL_DATABASE}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+jpa:
+  database: postgresql
+  hibernate:
+    ddl-auto: update
+    dialect: org.hibernate.dialect.PostgreSQLDialect
+    jdbc:
+      lob.non-contextual-creation: true
+  properties:
+    show_Sql: true
